@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+    background-color: #8b5e34; 
+    color: #a47148;
+    line-height: 1.5;
+}
+
+main {
+    max-width: 560px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #ffedd8;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px #a47148;
+    border: 1px solid #ffffff;
+}
+
+h1, h2 {
+    color: #8b5e34; /* Roxo marcante da Kuromi */
+    font-weight: bold;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.etiqueta {
+    color: #a47148;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #603808;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #8b5e34;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #603808;
+}
+
+input:focus-visible {
+    outline: 3px solid #603808;
+    outline-offset: 1px;
+    border-color: #603808;
+}
+
+button {
+    margin-top: 16px;
+    padding: 12px 24px;
+    border: 0;
+    border-radius: 8px;
+    background: #8b5e34;
+    color: #ffedd8;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background: #603808;
+}
+
+/* Botão de Excluir em tom Rosinha Bebê */
+#botao-excluir {
+    background: #8b5e34;
+}
+
+#botao-excluir:hover {
+    background: #603808;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+#mensagem {
+    padding: 16px;
+    border-left: 4px solid #603808; /* Borda destaque em rosa bebê */
+    background: #f3d5b5; /* Fundo suave rosado */
+    color: #603808;
+    border-radius: 0 8px 8px 0;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.nota {
+    font-size: 13px;
+    color: #603808;
+    opacity: 0.8;
+}

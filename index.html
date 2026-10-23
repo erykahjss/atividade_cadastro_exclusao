@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha primeira integração</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+</head>
+<body>
+    <main>
+        <p class="etiqueta">Sistema Escola</p>
+
+        <!-- Formulário de Cadastro -->
+        <section>
+            <h1>Cadastrar aluno</h1>
+            <p>Digite os dados e acompanhe a resposta do servidor</p>
+            <form id="formulario">
+                <label for="nome">Nome do aluno</label>
+                <input type="text" name="nome" id="nome" autocomplete="name" placeholder="Ex: Alicia"/>
+
+                <label for="email">E-mail do aluno</label>
+                <input type="email" name="email" id="email" autocomplete="email" placeholder="Ex: alicia@email.com"/>
+
+                <label for="curso">Curso do aluno</label>
+                <input type="text" name="curso" id="curso" placeholder="Ex: Ciência da Computação"/>
+
+                <button id="botao" type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+
+        <!-- Área de Exclusão -->
+        <section>
+            <br>
+            <h2>Excluir aluno</h2>
+            <form id="formulario-exclusao">
+                <label for="id-exclusao">ID do aluno para exclusão</label>
+                <input type="number" id="id-exclusao" placeholder="Ex: 1" min="1"/>
+                <button id="botao-excluir" type="submit">Excluir Aluno</button>
+            </form>
+        </section>
+
+        <p id="mensagem" role="status" aria-live="polite">Aguardando ação</p>
+        <p class="nota">Dados temporários: os cadastros são apagados ao reiniciar o servidor.</p>
+    </main>
+</body>
+</html>
